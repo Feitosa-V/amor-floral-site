@@ -6,7 +6,7 @@ import FloralDivider from './FloralDivider';
 
 const CeremonySection = () => {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-white animate-fade-in">
       <div className="max-w-4xl mx-auto">
         <FloralDivider />
         
@@ -19,10 +19,10 @@ const CeremonySection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="max-w-md mx-auto">
           {/* Cerimônia */}
-          <div className="text-center">
-            <div className="rounded-lg p-8 mb-6" style={{ backgroundColor: '#FAF6F2' }}>
+          <div className="text-center transform transition-all duration-300 hover:scale-105">
+            <div className="rounded-lg p-8 mb-6 shadow-sm" style={{ backgroundColor: '#FAF6F2' }}>
               <h3 className="font-serif text-2xl mb-4" style={{ color: '#8C5B4D' }}>
                 Cerimônia Religiosa
               </h3>
@@ -34,42 +34,11 @@ const CeremonySection = () => {
             </div>
             <Button 
               asChild
-              className="text-white px-6 py-2 rounded-full transition-colors hover:opacity-90"
+              className="text-white px-6 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
               style={{ backgroundColor: '#A3B882' }}
             >
               <a 
                 href={weddingData.ceremony.venue.mapsUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2"
-              >
-                <span>📍</span>
-                <span>Ver no Mapa</span>
-              </a>
-            </Button>
-          </div>
-
-          {/* Recepção */}
-          <div className="text-center">
-            <div className="rounded-lg p-8 mb-6" style={{ backgroundColor: '#F2A3A9', opacity: 0.1 }}>
-              <div style={{ opacity: 10 }}>
-                <h3 className="font-serif text-2xl mb-4" style={{ color: '#D85A67' }}>
-                  Recepção
-                </h3>
-                <div className="space-y-3" style={{ color: '#A54C4C' }}>
-                  <p className="text-lg font-medium">{weddingData.reception.time}</p>
-                  <p className="font-medium">{weddingData.reception.venue.name}</p>
-                  <p className="text-sm">{weddingData.reception.venue.address}</p>
-                </div>
-              </div>
-            </div>
-            <Button 
-              asChild
-              className="text-white px-6 py-2 rounded-full transition-colors hover:opacity-90"
-              style={{ backgroundColor: '#E0449C' }}
-            >
-              <a 
-                href={weddingData.reception.venue.mapsUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2"

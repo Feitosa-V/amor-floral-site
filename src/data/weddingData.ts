@@ -1,9 +1,8 @@
-
 export const weddingData = {
   couple: {
-    bride: "Maria",
-    groom: "João",
-    fullNames: "Maria Silva & João Santos"
+    bride: "Ranielly",
+    groom: "Caio César",
+    fullNames: "Ranielly & Caio César"
   },
   ceremony: {
     date: "15 de Dezembro, 2024",

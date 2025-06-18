@@ -33,15 +33,15 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="bg-white/80 backdrop-blur-sm rounded-lg px-6 py-4 shadow-sm border border-floral-coral/20 mb-8">
-      <p className="text-primary-brown font-light text-lg text-center">
-        <span className="text-floral-pink font-medium">Faltam</span>{' '}
-        <span className="font-medium text-primary">{timeLeft.days} dias</span>, {' '}
-        <span className="font-medium text-primary">{timeLeft.hours} horas</span>, {' '}
-        <span className="font-medium text-primary">{timeLeft.minutes} minutos</span> e {' '}
-        <span className="font-medium text-primary">{timeLeft.seconds} segundos</span>
+    <div className="bg-white/80 backdrop-blur-sm rounded-lg px-6 py-4 shadow-sm border mb-8 animate-fade-in" style={{ borderColor: '#F2A3A9' }}>
+      <p className="font-light text-lg text-center" style={{ color: '#8C5B4D' }}>
+        <span className="font-medium" style={{ color: '#E0449C' }}>Faltam</span>{' '}
+        <span className="font-medium" style={{ color: '#000000' }}>{timeLeft.days} dias</span>, {' '}
+        <span className="font-medium" style={{ color: '#000000' }}>{timeLeft.hours} horas</span>, {' '}
+        <span className="font-medium" style={{ color: '#000000' }}>{timeLeft.minutes} minutos</span> e {' '}
+        <span className="font-medium" style={{ color: '#000000' }}>{timeLeft.seconds} segundos</span>
         <br />
-        <span className="text-floral-pink font-medium">para o grande dia!</span>
+        <span className="font-medium" style={{ color: '#E0449C' }}>para o grande dia!</span>
       </p>
     </div>
   );

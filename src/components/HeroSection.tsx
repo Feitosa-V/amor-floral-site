@@ -8,11 +8,11 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center justify-center px-4" style={{ backgroundColor: '#FAF6F2' }}>
       <div className="text-center max-w-2xl mx-auto animate-fade-in">
         <div className="mb-8">
-          <div className="text-floral-pink text-6xl mb-4">❀</div>
+          <div className="text-6xl mb-4 animate-float" style={{ color: '#E0449C' }}>❀</div>
           <h1 className="font-serif text-5xl md:text-6xl mb-2" style={{ color: '#000000' }}>
             {weddingData.couple.bride}
           </h1>
-          <div className="text-primary-brown text-2xl font-light mb-2">&</div>
+          <div className="text-2xl font-light mb-2" style={{ color: '#8C5B4D' }}>&</div>
           <h1 className="font-serif text-5xl md:text-6xl mb-8" style={{ color: '#000000' }}>
             {weddingData.couple.groom}
           </h1>
@@ -22,7 +22,7 @@ const HeroSection = () => {
         
         <div className="space-y-4" style={{ color: '#8C5B4D' }}>
           <p className="text-lg font-light">Convidamos você para celebrar conosco</p>
-          <div className="border-t border-b py-6 my-8" style={{ borderColor: '#F2A3A9' }}>
+          <div className="border-t border-b py-6 my-8 hover-lift" style={{ borderColor: '#F2A3A9' }}>
             <p className="text-2xl font-serif mb-2" style={{ color: '#8C5B4D' }}>
               {weddingData.ceremony.date}
             </p>
