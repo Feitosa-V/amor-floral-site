@@ -6,7 +6,7 @@ export const weddingData = {
     fullNames: "Ranielly & Caio César"
   },
   ceremony: {
-    date: "15 de Dezembro, 2024",
+    date: "15 de Novembro, 2025",
     time: "16:00h",
     venue: {
       name: "Igreja São Francisco",
