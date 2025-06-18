@@ -22,7 +22,7 @@ const GuestGuideSection = () => {
           {weddingData.guestGuide.items.map((item, index) => (
             <div 
               key={index}
-              className="rounded-lg p-6 hover:shadow-md transition-shadow border"
+              className="rounded-lg p-6 hover:shadow-md transition-shadow border hover-lift animate-fade-in"
               style={{ backgroundColor: '#FAF6F2', borderColor: '#F2A3A9' }}
             >
               <h3 className="font-serif text-xl mb-3" style={{ color: '#8C5B4D' }}>
@@ -33,18 +33,6 @@ const GuestGuideSection = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="rounded-lg p-6 max-w-2xl mx-auto border" style={{ backgroundColor: '#F2A3A9', opacity: 0.1, borderColor: '#D85A67' }}>
-            <div style={{ opacity: 10 }}>
-              <p className="font-light text-lg" style={{ color: '#A54C4C' }}>
-                "A alegria de vocês é o que mais desejamos. 
-                Venham celebrar conosco este momento único!"
-              </p>
-              <div className="text-xl mt-4" style={{ color: '#E0449C' }}>❀</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

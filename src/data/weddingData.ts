@@ -1,3 +1,4 @@
+
 export const weddingData = {
   couple: {
     bride: "Ranielly",
@@ -23,7 +24,30 @@ export const weddingData = {
   },
   gifts: {
     pixKey: "maria.joao@email.com",
-    message: "Sua presença é o nosso maior presente! Mas se desejar nos presentear, ficaremos muito gratos."
+    message: "Sua presença é o nosso maior presente! Mas se desejar nos presentear, ficaremos muito gratos.",
+    giftList: [
+      {
+        id: "1",
+        name: "Jogo de Panelas",
+        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=400&fit=crop",
+        price: "R$ 250,00",
+        qrCodeUrl: ""
+      },
+      {
+        id: "2",
+        name: "Conjunto de Sala",
+        image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=400&fit=crop",
+        price: "R$ 1.200,00",
+        qrCodeUrl: ""
+      },
+      {
+        id: "3",
+        name: "Arranjo de Flores",
+        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        price: "R$ 80,00",
+        qrCodeUrl: ""
+      }
+    ]
   },
   contact: {
     whatsapp: "5511999999999",
