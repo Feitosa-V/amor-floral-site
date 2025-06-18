@@ -63,42 +63,27 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Wedding colors
-				sage: {
-					50: '#f7f9f7',
-					100: '#e8f1e8',
-					200: '#d1e3d1',
-					300: '#a8c8a8',
-					400: '#7aa67a',
-					500: '#5a8a5a',
-					600: '#4a714a',
-					700: '#3d5a3d',
-					800: '#344834',
-					900: '#2d3e2d'
+				// Wedding colors - Paleta do Convite
+				primary: {
+					DEFAULT: '#000000',
+					brown: '#8C5B4D',
+					light: '#FAF6F2'
 				},
-				rose: {
-					50: '#fdf2f8',
-					100: '#fce7f3',
-					200: '#fbcfe8',
-					300: '#f9a8d4',
-					400: '#f472b6',
-					500: '#ec4899',
-					600: '#db2777',
-					700: '#be185d',
-					800: '#9d174d',
-					900: '#831843'
+				floral: {
+					pink: '#E0449C',
+					coral: '#F2A3A9',
+					red: '#D85A67',
+					darkRed: '#A54C4C'
 				},
-				cream: {
-					50: '#fefdfb',
-					100: '#fdfbf7',
-					200: '#faf7ef',
-					300: '#f6f0e3',
-					400: '#f0e6d2',
-					500: '#e8d5b7',
-					600: '#d4b896',
-					700: '#b8956f',
-					800: '#9c7a5a',
-					900: '#82664b'
+				foliage: {
+					light: '#8C9C6C',
+					medium: '#A3B882'
+				},
+				accent: {
+					brown: '#5C4033'
+				},
+				background: {
+					main: '#FAF6F2'
 				}
 			},
 			fontFamily: {

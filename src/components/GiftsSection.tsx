@@ -18,36 +18,37 @@ const GiftsSection = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-cream-50">
+    <section className="py-20 px-4" style={{ backgroundColor: '#FAF6F2' }}>
       <div className="max-w-4xl mx-auto">
         <FloralDivider />
         
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl text-sage-800 mb-4">
+          <h2 className="font-serif text-4xl mb-4" style={{ color: '#8C5B4D' }}>
             Lista de Presentes
           </h2>
-          <p className="text-sage-600 font-light text-lg max-w-2xl mx-auto">
+          <p className="font-light text-lg max-w-2xl mx-auto" style={{ color: '#5C4033' }}>
             {weddingData.gifts.message}
           </p>
         </div>
 
         <div className="max-w-md mx-auto">
-          <div className="bg-white rounded-lg p-8 shadow-sm border border-sage-100">
+          <div className="bg-white rounded-lg p-8 shadow-sm border" style={{ borderColor: '#F2A3A9' }}>
             <div className="text-center">
               <div className="text-4xl mb-4">🎁</div>
-              <h3 className="font-serif text-2xl text-sage-700 mb-6">
+              <h3 className="font-serif text-2xl mb-6" style={{ color: '#8C5B4D' }}>
                 Chave PIX
               </h3>
               
-              <div className="bg-sage-50 rounded-lg p-4 mb-6">
-                <p className="text-sage-700 font-mono text-sm break-all">
+              <div className="rounded-lg p-4 mb-6" style={{ backgroundColor: '#FAF6F2' }}>
+                <p className="font-mono text-sm break-all" style={{ color: '#5C4033' }}>
                   {weddingData.gifts.pixKey}
                 </p>
               </div>
               
               <Button 
                 onClick={copyPixKey}
-                className="bg-sage-500 hover:bg-sage-600 text-white px-8 py-2 rounded-full transition-colors w-full"
+                className="text-white px-8 py-2 rounded-full transition-colors w-full hover:opacity-90"
+                style={{ backgroundColor: '#A3B882' }}
               >
                 {copied ? '✓ Copiado!' : '📋 Copiar Chave PIX'}
               </Button>
