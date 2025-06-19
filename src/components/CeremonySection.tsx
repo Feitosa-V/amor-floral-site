@@ -24,7 +24,7 @@ const CeremonySection = () => {
           <div className="text-center transform transition-all duration-300 hover:scale-105">
             <div className="rounded-lg p-8 mb-6 shadow-sm" style={{ backgroundColor: '#FAF6F2' }}>
               <h3 className="font-serif text-2xl mb-4" style={{ color: '#8C5B4D' }}>
-                Cerimônia Religiosa
+                Cerimônia
               </h3>
               <div className="space-y-3" style={{ color: '#5C4033' }}>
                 <p className="text-lg font-medium">{weddingData.ceremony.time}</p>

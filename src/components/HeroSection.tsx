@@ -52,24 +52,6 @@ const HeroSection = () => {
         <div className="space-y-6" style={{ color: '#8C5B4D' }}>
           <p className="text-xl font-light">Nosso grande dia chegou!</p>
           
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl border-2 py-8 px-6 my-12 hover-lift shadow-lg" style={{ borderColor: '#F2A3A9' }}>
-            <div className="text-3xl mb-4" style={{ color: '#E0449C' }}>💒</div>
-            <p className="text-3xl font-serif mb-3" style={{ color: '#8C5B4D' }}>
-              {weddingData.ceremony.date}
-            </p>
-            <p className="text-xl mb-4" style={{ color: '#8C5B4D' }}>
-              às {weddingData.ceremony.time}
-            </p>
-            <div className="flex justify-center items-center space-x-3 mb-2">
-              <div className="w-8 h-[1px]" style={{ backgroundColor: '#F2A3A9' }}></div>
-              <div className="text-sm" style={{ color: '#F2A3A9' }}>❀</div>
-              <div className="w-8 h-[1px]" style={{ backgroundColor: '#F2A3A9' }}></div>
-            </div>
-            <p className="text-lg font-medium" style={{ color: '#5C4033' }}>
-              {weddingData.ceremony.venue.name}
-            </p>
-          </div>
-          
           <p className="text-xl font-light">Venha celebrar este momento único conosco</p>
         </div>
         

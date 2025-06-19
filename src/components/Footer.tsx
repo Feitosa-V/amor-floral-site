@@ -44,7 +44,7 @@ const Footer = () => {
             <div className="w-12 h-[1px]" style={{ backgroundColor: '#8C5B4D' }}></div>
           </div>
           <p className="text-center text-sm mt-4" style={{ color: '#F2A3A9' }}>
-            Desenvolvido por Vinícius Feitosa
+            Desenvolvido por <strong><a href="https://www.instagram.com/feitosa.vinicius/" target='_blank'>Vinícius Feitosa</a></strong>
           </p>
         </div>
       </div>
