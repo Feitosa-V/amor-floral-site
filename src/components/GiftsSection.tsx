@@ -11,6 +11,7 @@ const GiftsSection = () => {
   const [copied, setCopied] = useState(false);
   const [selectedGift, setSelectedGift] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [visibleGifts, setVisibleGifts] = useState(6);
 
   const copyPixKey = async () => {
     try {
@@ -25,6 +26,10 @@ const GiftsSection = () => {
   const handleGiveGift = (giftId: string) => {
     setSelectedGift(giftId);
     setIsModalOpen(true);
+  };
+
+  const loadMoreGifts = () => {
+    setVisibleGifts(prev => prev + 6);
   };
 
   const selectedGiftData = selectedGift 
@@ -65,7 +70,7 @@ const GiftsSection = () => {
           
           <TabsContent value="gifts" className="mt-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {weddingData.gifts.giftList.map((gift) => (
+              {weddingData.gifts.giftList.slice(0, visibleGifts).map((gift) => (
                 <GiftCard
                   key={gift.id}
                   id={gift.id}
@@ -76,6 +81,18 @@ const GiftsSection = () => {
                 />
               ))}
             </div>
+            
+            {visibleGifts < weddingData.gifts.giftList.length && (
+              <div className="text-center mt-8">
+                <Button
+                  onClick={loadMoreGifts}
+                  className="text-white px-8 py-2 rounded-full transition-colors hover:opacity-90"
+                  style={{ backgroundColor: '#A3B882' }}
+                >
+                  Ver Mais Presentes
+                </Button>
+              </div>
+            )}
           </TabsContent>
           
           <TabsContent value="pix" className="mt-8">
