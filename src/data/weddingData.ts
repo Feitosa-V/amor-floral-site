@@ -28,52 +28,45 @@ export const weddingData = {
     giftList: [
       {
         id: "1",
-        name: "Jogo de Panelas",
         image: "public/images/gifts/gift_01.png",
-        price: "R$ 250,00",
-        qrCodeUrl: "/images/qrcodes/qr_code.jpeg"
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto1"
       },
       {
         id: "2",
-        name: "",
         image: "public/images/gifts/gift_02.png",
-        price: "",
-        qrCodeUrl: ""
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto2"
       },
       {
         id: "3",
-        name: "Arranjo de Flores",
         image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
-        price: "R$ 80,00",
-        qrCodeUrl: ""
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto3"
       },
       {
         id: "4",
-        name: "Arranjo de Flores",
         image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
-        price: "R$ 80,00",
-        qrCodeUrl: ""
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto4"
       },
       {
         id: "5",
-        name: "Arranjo de Flores",
         image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
-        price: "R$ 80,00",
-        qrCodeUrl: ""
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto5"
       },
       {
         id: "6",
-        name: "Arranjo de Flores",
         image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
-        price: "R$ 80,00",
-        qrCodeUrl: ""
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto6"
       },
       {
-        id: "6",
-        name: "Arranjo de Flores",
+        id: "7",
         image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
-        price: "R$ 80,00",
-        qrCodeUrl: ""
+        qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
+        productUrl: "https://www.exemplo.com/produto7"
       }
     ]
   },

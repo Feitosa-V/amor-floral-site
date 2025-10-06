@@ -6,53 +6,79 @@ import {
   DialogHeader,
   DialogTitle,
 } from './ui/dialog';
+import { Button } from './ui/button';
+import { weddingData } from '../data/weddingData';
 
 interface QRCodeModalProps {
   isOpen: boolean;
   onClose: () => void;
-  giftName: string;
   qrCodeUrl?: string;
+  productUrl?: string;
 }
 
-const QRCodeModal = ({ isOpen, onClose, giftName, qrCodeUrl }: QRCodeModalProps) => {
+const QRCodeModal = ({ isOpen, onClose, qrCodeUrl, productUrl }: QRCodeModalProps) => {
+  const handleWhatsAppNotify = () => {
+    const message = encodeURIComponent(
+      `Olá! Acabei de escolher um presente para o casamento de ${weddingData.couple.bride} e ${weddingData.couple.groom}! 🎁`
+    );
+    const whatsappUrl = `https://wa.me/${weddingData.contact.whatsapp}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handleViewProduct = () => {
+    if (productUrl) {
+      window.open(productUrl, '_blank');
+    }
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-md mx-auto" style={{ backgroundColor: '#FAF6F2', borderColor: '#F2A3A9' }}>
+      <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-center font-serif text-xl" style={{ color: '#8C5B4D' }}>
-            QR Code - {giftName}
+          <DialogTitle className="font-serif text-2xl text-center" style={{ color: '#8C5B4D' }}>
+            Presentear
           </DialogTitle>
         </DialogHeader>
         
-        <div className="text-center py-6">
-          <div className="bg-white rounded-lg p-6 mb-4 border" style={{ borderColor: '#F2A3A9' }}>
-            {qrCodeUrl ? (
+        <div className="flex flex-col items-center gap-6 py-4">
+          {qrCodeUrl ? (
+            <div className="w-full max-w-sm">
               <img 
                 src={qrCodeUrl} 
-                alt={`QR Code para ${giftName}`}
-                className="w-48 h-48 mx-auto"
+                alt="QR Code para pagamento"
+                className="w-full h-auto rounded-lg border-2"
+                style={{ borderColor: '#F2A3A9' }}
               />
-            ) : (
-              <div 
-                className="w-48 h-48 mx-auto flex items-center justify-center rounded-lg border-2 border-dashed"
-                style={{ borderColor: '#F2A3A9', backgroundColor: '#FAF6F2' }}
+              <p className="text-center text-sm mt-4" style={{ color: '#5C4033' }}>
+                Escaneie o QR Code para realizar o pagamento
+              </p>
+            </div>
+          ) : (
+            <div className="w-full p-8 text-center rounded-lg" style={{ backgroundColor: '#FAF6F2' }}>
+              <p className="text-sm" style={{ color: '#5C4033' }}>
+                QR Code não disponível. Use os botões abaixo para ver o presente ou nos avisar.
+              </p>
+            </div>
+          )}
+
+          <div className="flex flex-col gap-3 w-full">
+            {productUrl && (
+              <Button 
+                onClick={handleViewProduct}
+                className="w-full text-white rounded-full transition-colors hover:opacity-90"
+                style={{ backgroundColor: '#A3B882' }}
               >
-                <div className="text-center">
-                  <div className="text-4xl mb-2">📱</div>
-                  <p className="text-sm" style={{ color: '#5C4033' }}>
-                    QR Code será<br />adicionado em breve
-                  </p>
-                </div>
-              </div>
+                🔗 Ver Presente
+              </Button>
             )}
-          </div>
-          
-          <p className="text-sm mb-4" style={{ color: '#5C4033' }}>
-            Escaneie o código QR acima para fazer o pagamento do presente
-          </p>
-          
-          <div className="text-center">
-            <div className="text-2xl" style={{ color: '#E0449C' }}>❀</div>
+            
+            <Button 
+              onClick={handleWhatsAppNotify}
+              className="w-full text-white rounded-full transition-colors hover:opacity-90"
+              style={{ backgroundColor: '#F2A3A9' }}
+            >
+              💬 Avisar no WhatsApp
+            </Button>
           </div>
         </div>
       </DialogContent>

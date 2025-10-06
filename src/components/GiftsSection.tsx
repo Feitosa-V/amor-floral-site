@@ -74,9 +74,7 @@ const GiftsSection = () => {
                 <GiftCard
                   key={gift.id}
                   id={gift.id}
-                  name={gift.name}
                   image={gift.image}
-                  price={gift.price}
                   onGiveGift={handleGiveGift}
                 />
               ))}
@@ -126,8 +124,8 @@ const GiftsSection = () => {
         <QRCodeModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          giftName={selectedGiftData?.name || ''}
           qrCodeUrl={selectedGiftData?.qrCodeUrl}
+          productUrl={selectedGiftData?.productUrl}
         />
       </div>
     </section>
