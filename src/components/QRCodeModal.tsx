@@ -33,35 +33,41 @@ const QRCodeModal = ({ isOpen, onClose, qrCodeUrl, productUrl }: QRCodeModalProp
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md">
+      <DialogContent className="max-w-md mx-auto" style={{ backgroundColor: '#FAF6F2', borderColor: '#F2A3A9' }}>
         <DialogHeader>
-          <DialogTitle className="font-serif text-2xl text-center" style={{ color: '#8C5B4D' }}>
+          <DialogTitle className="text-center font-serif text-xl" style={{ color: '#8C5B4D' }}>
             Presentear
           </DialogTitle>
         </DialogHeader>
         
-        <div className="flex flex-col items-center gap-6 py-4">
-          {qrCodeUrl ? (
-            <div className="w-full max-w-sm">
+        <div className="text-center py-6">
+          <div className="bg-white rounded-lg p-6 mb-4 border" style={{ borderColor: '#F2A3A9' }}>
+            {qrCodeUrl ? (
               <img 
                 src={qrCodeUrl} 
                 alt="QR Code para pagamento"
-                className="w-full h-auto rounded-lg border-2"
-                style={{ borderColor: '#F2A3A9' }}
+                className="w-48 h-48 mx-auto"
               />
-              <p className="text-center text-sm mt-4" style={{ color: '#5C4033' }}>
-                Escaneie o QR Code para realizar o pagamento
-              </p>
-            </div>
-          ) : (
-            <div className="w-full p-8 text-center rounded-lg" style={{ backgroundColor: '#FAF6F2' }}>
-              <p className="text-sm" style={{ color: '#5C4033' }}>
-                QR Code não disponível. Use os botões abaixo para ver o presente ou nos avisar.
-              </p>
-            </div>
-          )}
-
-          <div className="flex flex-col gap-3 w-full">
+            ) : (
+              <div 
+                className="w-48 h-48 mx-auto flex items-center justify-center rounded-lg border-2 border-dashed"
+                style={{ borderColor: '#F2A3A9', backgroundColor: '#FAF6F2' }}
+              >
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📱</div>
+                  <p className="text-sm" style={{ color: '#5C4033' }}>
+                    QR Code será<br />adicionado em breve
+                  </p>
+                </div>
+              </div>
+            )}
+          </div>
+          
+          <p className="text-sm mb-4" style={{ color: '#5C4033' }}>
+            Escaneie o código QR acima para fazer o pagamento do presente
+          </p>
+          
+          <div className="flex flex-col gap-3 mb-4">
             {productUrl && (
               <Button 
                 onClick={handleViewProduct}
@@ -79,6 +85,10 @@ const QRCodeModal = ({ isOpen, onClose, qrCodeUrl, productUrl }: QRCodeModalProp
             >
               💬 Avisar no WhatsApp
             </Button>
+          </div>
+
+          <div className="text-center">
+            <div className="text-2xl" style={{ color: '#E0449C' }}>❀</div>
           </div>
         </div>
       </DialogContent>
