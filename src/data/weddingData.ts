@@ -30,41 +30,41 @@ export const weddingData = {
         id: "1",
         image: "public/images/gifts/gift_01.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
-        productUrl: "https://www.exemplo.com/produto1"
+        productUrl: "https://mpago.la/1vNQ7AN"
       },
       {
         id: "2",
         image: "public/images/gifts/gift_02.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
-        productUrl: "https://www.exemplo.com/produto2"
+        productUrl: "https://mpago.la/1eeTfvq"
       },
       {
         id: "3",
-        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        image: "public/images/gifts/gift_03.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
-        productUrl: "https://www.exemplo.com/produto3"
+        productUrl: "https://mpago.la/2dq2d7i"
       },
       {
         id: "4",
-        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        image: "public/images/gifts/gift_04.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
-        productUrl: "https://www.exemplo.com/produto4"
+        productUrl: "https://mpago.la/1uMPqfW"
       },
       {
         id: "5",
-        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        image: "public/images/gifts/gift_05.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
-        productUrl: "https://www.exemplo.com/produto5"
+        productUrl: "https://mpago.la/1FBzDPL"
       },
       {
         id: "6",
-        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        image: "public/images/gifts/gift_06.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
-        productUrl: "https://www.exemplo.com/produto6"
+        productUrl: "https://mpago.la/1ZLuYgt"
       },
       {
         id: "7",
-        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        image: "public/images/gifts/gift_07.png",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg",
         productUrl: "https://www.exemplo.com/produto7"
       }
