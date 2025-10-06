@@ -29,19 +29,47 @@ export const weddingData = {
       {
         id: "1",
         name: "Jogo de Panelas",
-        image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=400&h=400&fit=crop",
+        image: "public/images/gifts/gift_01.png",
         price: "R$ 250,00",
         qrCodeUrl: "/images/qrcodes/qr_code.jpeg"
       },
       {
         id: "2",
-        name: "Conjunto de Sala",
-        image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=400&fit=crop",
-        price: "R$ 1.200,00",
+        name: "",
+        image: "public/images/gifts/gift_02.png",
+        price: "",
         qrCodeUrl: ""
       },
       {
         id: "3",
+        name: "Arranjo de Flores",
+        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        price: "R$ 80,00",
+        qrCodeUrl: ""
+      },
+      {
+        id: "4",
+        name: "Arranjo de Flores",
+        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        price: "R$ 80,00",
+        qrCodeUrl: ""
+      },
+      {
+        id: "5",
+        name: "Arranjo de Flores",
+        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        price: "R$ 80,00",
+        qrCodeUrl: ""
+      },
+      {
+        id: "6",
+        name: "Arranjo de Flores",
+        image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
+        price: "R$ 80,00",
+        qrCodeUrl: ""
+      },
+      {
+        id: "6",
         name: "Arranjo de Flores",
         image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=400&fit=crop",
         price: "R$ 80,00",

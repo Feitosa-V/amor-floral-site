@@ -24,7 +24,7 @@ const CouplePhotoSection = () => {
         <div className="relative mb-12 animate-fade-in hover-lift">
           <div className="aspect-[4/3] md:aspect-[3/2] max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg border-4" style={{ borderColor: '#F2A3A9' }}>
             <img 
-              src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&h=600&fit=crop&crop=faces"
+              src="public/images/foto_rannielly_caio.png"
               alt={`${weddingData.couple.bride} e ${weddingData.couple.groom}`}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
@@ -40,7 +40,7 @@ const CouplePhotoSection = () => {
             "{weddingData.couple.bride} & {weddingData.couple.groom}"
           </p>
           <p className="font-light text-lg" style={{ color: '#5C4033' }}>
-            Juntos construindo um futuro cheio de amor, cumplicidade e sonhos realizados
+            É uma alegria imensa ter você aqui, fazendo parte desse momento tão especial das nossas vidas. E olha… se você chegou até aqui, pode ter certeza: tem um espaço guardado no nosso coração.
           </p>
         </div>
       </div>
