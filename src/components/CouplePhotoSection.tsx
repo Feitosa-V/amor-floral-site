@@ -41,6 +41,17 @@ const CouplePhotoSection = () => {
           </p>
           <p className="font-light text-lg" style={{ color: '#5C4033' }}>
             É uma alegria imensa ter você aqui, fazendo parte desse momento tão especial das nossas vidas. E olha… se você chegou até aqui, pode ter certeza: tem um espaço guardado no nosso coração.
+
+            A nossa história começou do jeitinho mais a nossa cara: numa festa, é claro! Quem conhece a gente sabe que barzinho, música boa e uma boa companhia sempre fizeram parte do nosso roteiro. Foi através da Mayara que nos aproximamos e não demorou muito até rolar o primeiro beijo. Mas calma, a história não para por aí!
+ 
+            Depois disso, viramos amigos, parceiros de rolê, confidentes… e, sem nem perceber, a gente foi ficando. Ficando mais próximos, mais conectados, mais certos de que tinha algo diferente ali. Até que não dava mais pra negar: a gente se encontrou de verdade.
+            
+            A nossa conexão sempre foi leve, verdadeira e daquelas que a gente sente que foi escrita por alguém lá de cima. E foi mesmo. Deus caprichou nos detalhes e preparou tudo com perfeição.
+            
+            Agora, depois de tantos momentos vividos juntos, chegou a hora de dar um novo passo: vamos casar! E claro, essa comemoração só faz sentido com vocês ao nosso lado! Vocês que riram, dançaram, vibraram (e talvez até deram uma forcinha no começo… rs) com a gente.
+            
+            Sintam-se em casa. Esse espaço é nosso, mas é feito com muito carinho para vocês.
+
           </p>
         </div>
       </div>
