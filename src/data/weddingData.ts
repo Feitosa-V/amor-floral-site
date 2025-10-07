@@ -23,8 +23,9 @@ export const weddingData = {
     }
   },
   gifts: {
-    pixKey: "maria.joao@email.com",
+    pixKey: "35992138337",
     message: "Sua presença é o nosso maior presente! Mas se desejar nos presentear, ficaremos muito gratos.",
+    qrCodeUrl: "/images/qrcodes/qr_code_pix.png",
     giftList: [
       {
         id: "1",
@@ -71,31 +72,31 @@ export const weddingData = {
     ]
   },
   contact: {
-    whatsapp: "5511999999999",
-    message: "Olá! Gostaria de saber mais sobre o casamento da Maria e João."
+    whatsapp: "553592138337",
+    message: "Olá! Gostaria de saber mais sobre o casamento."
   },
   guestGuide: {
     title: "Orientações aos Convidados",
     items: [
       {
         title: "Traje",
-        description: "Traje social. Evite cores muito claras como branco, off-white ou tons pastéis muito claros."
+        description: "Trajes Esporte Fino."
       },
       {
         title: "Horário",
-        description: "Pedimos que cheguem com 15 minutos de antecedência para acomodação."
+        description: "16:00 - Seja pontual."
       },
       {
-        title: "Cerimônia Religiosa",
-        description: "A cerimônia será realizada na Igreja São Francisco. Por favor, mantenham os celulares no silencioso."
+        title: "Presença",
+        description: "Confirme sua presença."
       },
       {
-        title: "Recepção",
-        description: "Após a cerimônia, nos encontraremos no Espaço Villa Rosa para a festa de casamento."
+        title: "Rede Social",
+        description: "Nos marque nas Redes Sociais"
       },
       {
-        title: "Crianças",
-        description: "Crianças são muito bem-vindas! Haverá um espaço kids durante a recepção."
+        title: "Atenção",
+        description: "Branco é a cor da Noiva"
       }
     ]
   }
