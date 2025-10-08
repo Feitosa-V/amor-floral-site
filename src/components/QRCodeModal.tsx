@@ -60,13 +60,13 @@ const QRCodeModal = ({ isOpen, onClose, productUrl }: QRCodeModalProps) => {
           >
             <TabsTrigger 
               value="qrcode" 
-              className="rounded-full transition-all font-medium"
+              className="rounded-full transition-all font-medium data-[state=active]:bg-[#F2A3A9] data-[state=active]:text-white"
             >
               QR Code
             </TabsTrigger>
             <TabsTrigger 
               value="pix" 
-              className="rounded-full transition-all font-medium"
+              className="rounded-full transition-all font-medium data-[state=active]:bg-[#F2A3A9] data-[state=active]:text-white"
             >
               PIX
             </TabsTrigger>
