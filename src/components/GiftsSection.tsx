@@ -51,18 +51,19 @@ const GiftsSection = () => {
         </div>
 
         <Tabs defaultValue="gifts" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-8" style={{ backgroundColor: '#F2A3A9' }}>
+          <TabsList 
+            className="grid w-full grid-cols-2 mb-8 h-12 rounded-full p-1"
+            style={{ backgroundColor: '#F2E8E1' }}
+          >
             <TabsTrigger 
               value="gifts" 
-              className="data-[state=active]:bg-white data-[state=active]:text-gray-900"
-              style={{ color: '#5C4033' }}
+              className="rounded-full transition-all font-medium data-[state=active]:bg-[#F2A3A9] data-[state=active]:text-white"
             >
               Presentes
             </TabsTrigger>
             <TabsTrigger 
               value="pix" 
-              className="data-[state=active]:bg-white data-[state=active]:text-gray-900"
-              style={{ color: '#5C4033' }}
+              className="rounded-full transition-all font-medium data-[state=active]:bg-[#F2A3A9] data-[state=active]:text-white"
             >
               PIX
             </TabsTrigger>
