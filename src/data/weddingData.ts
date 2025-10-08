@@ -11,7 +11,7 @@ export const weddingData = {
     venue: {
       name: "Lavras Hall",
       address: "Rua do Fresador, 43 - Centro Empresarial - Lavras/MG",
-      mapsUrl: "https://www.google.com/maps/place/Lavras+Hall/@-21.2741043,-44.9793621,17z/data=!3m1!4b1!4m6!3m5!1s0x9ffd55f98d774d:0xc09082f69c7b6f6a!8m2!3d-21.2741093!4d-44.9767872!16s%2Fg%2F11fstnr2kh?entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D"
+      mapsUrl: "https://www.google.com/maps/dir//R.+do+Fresador,+43+-+Centro+Empresarial,+Lavras+-+MG,+37200-000/@-21.2740893,-45.0591889,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9ffd55f98d774d:0xc09082f69c7b6f6a!2m2!1d-44.9767872!2d-21.2741093?entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D"
     }
   },
   reception: {
