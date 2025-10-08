@@ -124,7 +124,6 @@ const GiftsSection = () => {
         <QRCodeModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          qrCodeUrl={selectedGiftData?.qrCodeUrl}
           productUrl={selectedGiftData?.productUrl}
         />
       </div>

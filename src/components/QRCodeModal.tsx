@@ -14,11 +14,10 @@ import { toast } from 'sonner';
 interface QRCodeModalProps {
   isOpen: boolean;
   onClose: () => void;
-  qrCodeUrl?: string;
   productUrl?: string;
 }
 
-const QRCodeModal = ({ isOpen, onClose, qrCodeUrl, productUrl }: QRCodeModalProps) => {
+const QRCodeModal = ({ isOpen, onClose, productUrl }: QRCodeModalProps) => {
   const [copied, setCopied] = useState(false);
 
   const copyPixKey = async () => {
@@ -55,15 +54,28 @@ const QRCodeModal = ({ isOpen, onClose, qrCodeUrl, productUrl }: QRCodeModalProp
         </DialogHeader>
         
         <Tabs defaultValue="qrcode" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6">
-            <TabsTrigger value="qrcode">QR Code</TabsTrigger>
-            <TabsTrigger value="pix">PIX</TabsTrigger>
+          <TabsList 
+            className="grid w-full grid-cols-2 mb-6 h-12 rounded-full p-1"
+            style={{ backgroundColor: '#F2E8E1' }}
+          >
+            <TabsTrigger 
+              value="qrcode" 
+              className="rounded-full transition-all font-medium"
+            >
+              QR Code
+            </TabsTrigger>
+            <TabsTrigger 
+              value="pix" 
+              className="rounded-full transition-all font-medium"
+            >
+              PIX
+            </TabsTrigger>
           </TabsList>
           
           <TabsContent value="qrcode" className="text-center">
             <div className="bg-white rounded-lg p-6 mb-4 border" style={{ borderColor: '#F2A3A9' }}>
               <img 
-                src={qrCodeUrl || weddingData.gifts.qrCodeUrl} 
+                src={weddingData.gifts.qrCodeUrl} 
                 alt="QR Code para pagamento"
                 className="w-48 h-48 mx-auto"
               />

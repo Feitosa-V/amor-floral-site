@@ -164,3 +164,9 @@
 .shine-effect:hover::before {
   left: 100%;
 }
+
+/* Custom styling for tabs - wedding theme */
+[data-state="active"] {
+  background-color: #F2A3A9 !important;
+  color: #FFFFFF !important;
+}
