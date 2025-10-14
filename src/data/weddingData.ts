@@ -11,7 +11,7 @@ export const weddingData = {
     venue: {
       name: "Lavras Hall",
       address: "Rua do Fresador, 43 - Centro Empresarial - Lavras/MG",
-      mapsUrl: "https://www.google.com/maps/dir//R.+do+Fresador,+43+-+Centro+Empresarial,+Lavras+-+MG,+37200-000/@-21.2740893,-45.0591889,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9ffd55f98d774d:0xc09082f69c7b6f6a!2m2!1d-44.9767872!2d-21.2741093?entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D"
+      mapsUrl: "https://www.google.com/maps/place/Lavras+Hall/@-21.2741093,-44.9767872,17z/data=!3m1!4b1!4m6!3m5!1s0x9ffd55f98d774d:0xc09082f69c7b6f6a!8m2!3d-21.2741093!4d-44.9767872!16s%2Fg%2F11fstnr2kh?entry=ttu&g_ep=EgoyMDI1MTAwOC4wIKXMDSoASAFQAw%3D%3D"
     }
   },
   reception: {
@@ -29,7 +29,7 @@ export const weddingData = {
     giftList: [
       {
         id: "1",
-        image: "/images/gifts/gift_01.png",
+        image: "/images/gifts/gift_01.jpg",
         productUrl: "https://mpago.la/1vNQ7AN"
       },
       {
@@ -330,32 +330,53 @@ export const weddingData = {
     ]
   },
   contact: {
-    whatsapp: "553592138337",
+    whatsapp: "5535991003787",
     message: "Olá! Gostaria de saber mais sobre o casamento."
   },
   guestGuide: {
     title: "Orientações aos Convidados",
     items: [
-      {
-        title: "Traje",
-        description: "Trajes Esporte Fino."
+       {
+      title: "✅ Confirmação",
+      description: "Confirme sua presença."
       },
       {
-        title: "Horário",
-        description: "16:00 - Seja pontual."
+        title: "👔 Traje",
+        description: "Traje esporte fino."
       },
       {
-        title: "Presença",
-        description: "Confirme sua presença."
+        title: "🤍 Cor da Noiva",
+        description: "Branco é a cor da noiva."
       },
       {
-        title: "Rede Social",
-        description: "Nos marque nas Redes Sociais"
+        title: "🎉 Aproveite",
+        description: "Aproveite bastante!"
       },
       {
-        title: "Atenção",
-        description: "Branco é a cor da Noiva"
-      }
+        title: "🍰 Mesa de Doces",
+        description: "Aguarde a liberação da mesa de doces."
+      },
+      {
+        title: "👥 Convidados",
+        description: "Convidado não convida."
+      },
+      {
+        title: "📸 Fotógrafos",
+        description: "Não atrapalhe os fotógrafos."
+      },
+      {
+        title: "🎀 Decoração",
+        description: "Não leve a decoração para casa."
+      },
+      {
+        title: "⏰ Horário",
+        description: "Não atrase, seja pontual."
+      },
+      {
+        title: "👋 Despedida",
+        description: "Não saia sem se despedir dos noivos."
+      },
+     
     ]
   }
 };
