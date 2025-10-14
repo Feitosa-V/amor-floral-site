@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mb-12">
+        {/* <div className="flex justify-center mb-12">
           <Button 
             asChild
             className="text-white px-8 py-3 rounded-full transition-colors hover:opacity-90"
@@ -35,7 +35,7 @@ const Footer = () => {
               <span>Fale Conosco via WhatsApp</span>
             </a>
           </Button>
-        </div>
+        </div> */}
 
         <div className="border-t pt-8" style={{ borderColor: '#8C5B4D' }}>
           <div className="flex justify-center items-center space-x-4" style={{ color: '#F2A3A9' }}>
