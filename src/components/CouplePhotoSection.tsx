@@ -24,7 +24,7 @@ const CouplePhotoSection = () => {
         <div className="relative mb-12 animate-fade-in hover-lift">
           <div className="aspect-[4/3] md:aspect-[3/2] max-w-2xl mx-auto rounded-lg overflow-hidden shadow-lg border-4" style={{ borderColor: '#F2A3A9' }}>
             <img 
-              src="public/images/foto_rannielly_caio.png"
+              src="/images/foto_rannielly_caio.png"
               alt={`${weddingData.couple.bride} e ${weddingData.couple.groom}`}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />
