@@ -52,7 +52,7 @@ const HeroSection = () => {
         <div className="space-y-6" style={{ color: '#8C5B4D' }}>
           <p className="text-xl font-light">Nosso grande dia está chegando!</p>
           
-          <p className="text-xl font-light">Venha celebrar este momento único conosco</p>
+          <p className="text-xl font-light">Venha celebrar este momento único conosco.</p>
         </div>
         
         {/* Ornamento inferior */}

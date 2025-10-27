@@ -17,7 +17,7 @@ const CouplePhotoSection = () => {
             Nossa História
           </h2>
           <p className="text-lg font-light max-w-2xl mx-auto" style={{ color: '#5C4033' }}>
-            Dois corações que se encontraram e decidiram caminhar juntos para sempre
+            Dois corações que se encontraram e decidiram caminhar juntos para sempre...
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const CouplePhotoSection = () => {
           {/* Elementos decorativos */}
           <div className="absolute -top-4 -left-4 text-3xl animate-float" style={{ color: '#E0449C' }}>❀</div>
           <div className="absolute -bottom-4 -right-4 text-3xl animate-float" style={{ color: '#E0449C', animationDelay: '1s' }}>❀</div>
-        </div>
+          </div>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-sm border animate-fade-in" style={{ borderColor: '#F2A3A9' }}>
           <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: '#8C5B4D' }}>
@@ -63,6 +63,29 @@ const CouplePhotoSection = () => {
             Sintam-se em casa. Esse espaço é nosso, mas é feito com muito carinho para vocês.
           </p>
         </div>
+
+      {/* Vídeo */}
+       <div className="mt-16 animate-fade-in">
+          <div
+            className="max-w-3xl mx-auto rounded-lg overflow-hidden shadow-lg border-4 relative"
+            style={{ borderColor: '#F2A3A9' }}
+          >
+            {/* Proporção fixa sem corte */}
+            <div className="aspect-[16/9] w-full bg-black">
+              <video
+                controls
+                playsInline
+                className="w-full h-full object-contain"
+                poster="/images/foto_rannielly_caio.png"
+                preload="metadata"
+              >
+                <source src="/video/video_casamento.MP4" type="video/mp4" />
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+            </div>
+          </div>
+      </div>
+
       </div>
     </section>
   );

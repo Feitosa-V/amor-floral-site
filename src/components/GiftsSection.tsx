@@ -100,8 +100,16 @@ const GiftsSection = () => {
                 <div className="text-center">
                   <div className="text-4xl mb-4">🎁</div>
                   <h3 className="font-serif text-2xl mb-6" style={{ color: '#8C5B4D' }}>
-                    Chave PIX
+                    Chave PIX e QR Code
                   </h3>
+
+                   <div className="bg-white rounded-lg p-6 mb-4 border" style={{ borderColor: '#F2A3A9' }}>
+                      <img 
+                        src={weddingData.gifts.qrCodeUrl} 
+                        alt="QR Code para pagamento"
+                        className="w-48 h-48 mx-auto"
+                      />
+                    </div>
                   
                   <div className="rounded-lg p-4 mb-6" style={{ backgroundColor: '#FAF6F2' }}>
                     <p className="font-mono text-sm break-all" style={{ color: '#5C4033' }}>

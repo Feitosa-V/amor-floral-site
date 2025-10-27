@@ -116,7 +116,7 @@ const QRCodeModal = ({ isOpen, onClose, productUrl }: QRCodeModalProps) => {
               className="w-full text-white rounded-full transition-colors hover:opacity-90"
               style={{ backgroundColor: '#A3B882' }}
             >
-              🔗 Ver Presente
+              🔗 Pagar com Cartão
             </Button>
           )}
           

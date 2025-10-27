@@ -15,7 +15,7 @@ const CeremonySection = () => {
             Nossa Cerimônia
           </h2>
           <p className="font-light text-lg" style={{ color: '#5C4033' }}>
-            Será uma honra tê-los conosco neste momento especial
+            Será uma honra tê-los conosco neste momento especial.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ const CeremonySection = () => {
                 Cerimônia
               </h3>
               <div className="space-y-3" style={{ color: '#5C4033' }}>
-                <p className="text-lg font-medium">{weddingData.ceremony.time}</p>
+                <p className="text-lg font-medium">29 de novembro às {weddingData.ceremony.time}</p>
                 <p className="font-medium">{weddingData.ceremony.venue.name}</p>
                 <p className="text-sm">{weddingData.ceremony.venue.address}</p>
               </div>

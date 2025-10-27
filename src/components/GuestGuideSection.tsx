@@ -14,7 +14,7 @@ const GuestGuideSection = () => {
             {weddingData.guestGuide.title}
           </h2>
           <p className="font-light text-lg" style={{ color: '#5C4033' }}>
-            Algumas informações importantes para nossos queridos convidados
+            Algumas informações importantes para nossos queridos convidados:
           </p>
         </div>
 
